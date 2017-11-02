@@ -1,0 +1,9 @@
+[28-Oct-2017 08:50:55 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Dotenv values containing spaces must be surrounded by quotes. in /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Loader.php:228
+Stack trace:
+#0 /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Loader.php(97): Dotenv\Loader->sanitiseVariableValue('DB_USERNAME', 'Takuto Eto')
+#1 /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Loader.php(330): Dotenv\Loader->normaliseEnvironmentVariable('DB_USERNAME', 'Takuto Eto')
+#2 /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Loader.php(58): Dotenv\Loader->setEnvironmentVariable('DB_USERNAME=Tak...')
+#3 /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Dotenv.php(91): Dotenv\Loader->load()
+#4 /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Dotenv.php(48): Dotenv\Dotenv->loadData()
+#5 /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/DetectEnvironment.php(24): Dotenv\Dotenv->load()
+#6 /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/ in /home/ubuntu/workspace/cms/vendor/vlucas/phpdotenv/src/Loader.php on line 228
